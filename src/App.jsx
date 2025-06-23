@@ -5,7 +5,7 @@ import { SiFuturelearn } from "react-icons/si";
 function App() {
   return (
     <main className='bg-secondary min-h-screen px-8'>
-      <header className='h-32 max-w-8xl mx-auto flex items-center'>
+      <header className='h-16 max-w-8xl mx-auto flex items-center'>
         <Link to={'/'} className='flex items-center'>
           <SiFuturelearn className='size-5 mr-2 text-gray-100' strokeWidth={2}/>
           <span className="text-gray-100 inter-extrabold text-md tracking-wide">Premarket</span>

@@ -9,9 +9,9 @@ import { useNavigate } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
 
-const Loading = ({msg}) => (<div className='flex items-center gap-3 text-blue-600'>
-    <AiOutlineLoading3Quarters className='size-6 animate-spin'/>
-    <span className='text-sm tracking-wider inter-semibold'>{msg}</span>
+const Loading = ({msg}) => (<div className='flex flex-nowrap items-center gap-3 text-blue-600 max-w-[90vw]'>
+    <AiOutlineLoading3Quarters className='size-6 animate-spin shrink-0'/>
+    <span className='text-sm tracking-wider inter-semibold break-words'>{msg}</span>
 </div>)
 
 
@@ -40,7 +40,9 @@ function Home() {
     }
     return (
         <div className="min-h-[80vh] py-10 md:py-16 max-w-8xl mx-auto inter-regular">
-            <ToastContainer />
+            <ToastContainer 
+            toastClassName="!w-full !max-w-xs sm:!max-w-sm md:!max-w-md"
+            bodyClassName="flex items-center gap-2"/>
             <div className="pb-12 grid grid-cols-1 lg:grid-cols-2 justify-center items-center gap-x-8 gap-y-24">
                 {/* first grid */}
                 <div className="flex flex-col justify-center items-center md:items-start">
