@@ -39,7 +39,7 @@ function Home() {
         })
     }
     return (
-        <div className="min-h-[80vh] py-10 md:py-16 max-w-8xl mx-auto inter-regular">
+        <div className="min-h-[80vh] py-10 md:py-16 max-w-7xl mx-auto inter-regular">
             <ToastContainer 
             toastClassName="!w-full !max-w-xs sm:!max-w-sm md:!max-w-md"
             bodyClassName="flex items-center gap-2"/>
@@ -52,7 +52,7 @@ function Home() {
                             <span className="text-blue-600 text-sm inter-light">Leverage AI and predict the future</span>
                         </span>
                     </div>
-                    <h1 className="text-center md:text-start mb-6 text-4xl lg:text-5xl inter-bold text-gray-100 capitalize tracking-wide leading-tight">
+                    <h1 className="text-center md:text-start mb-6 text-4xl lg:text-5xl inter-bold text-gray-100 capitalize tracking-wide leading-tight max-w-sm">
                         An all in one App to predict the future
                     </h1>
                     <p className="text-center md:text-start mb-8 lg:mb-12 text-lg text-gray-400 inter-regular max-w-sm">Build and scale your future predictions with Premarket app.</p>
@@ -73,12 +73,12 @@ function Home() {
                                     setEmail(e.target.value);
                                     if(error)setError(null);                                    
                                 }}
-                                className='block w-full max-w-72 bg-gray-600 text-gray-50 p-4 rounded-lg outline-none text-sm placeholder:text-sm border border-transparent focus:border-gray-100' />
+                                className='block w-full bg-gray-600 text-gray-50 p-4 rounded-lg outline-none text-sm placeholder:text-sm border border-transparent focus:border-gray-100' />
                             <button 
                             onClick={handleClick}
                             disabled={isLoading}
                             type='button' 
-                            className="bg-cyan-700 text-gray-100 text-sm inter-bold capitalize rounded-lg disabled:bg-cyan-800 hover:bg-cyan-600 tracking-wider px-6 py-2 cursor-pointer">Join Waitlist</button>
+                            className="mt-2 bg-cyan-700 text-gray-100 text-sm inter-bold capitalize rounded-full disabled:bg-cyan-800 hover:bg-cyan-600 tracking-wider px-6 py-2 cursor-pointer">Join Waitlist</button>
                         </div>
                     </div>
                 </div>
@@ -92,7 +92,7 @@ function Home() {
                     </span>
                     <div className="flex gap-6 items-center relative">
                         <span className='absolute -left-10 -top-2 bg-indigo-300 pb-5 pt-2 px-2 rounded text-xs'>1</span>
-                        <span className="bg-gray-100 text-gray-900 inter-medium px-8 py-1.5 text-md rounded-xl tracking-wider inline-flex items-center gap-3">
+                        <span className="w-72 bg-gray-100 text-gray-900 inter-medium px-8 py-1.5 text-md rounded-xl tracking-wider inline-flex items-center gap-3">
                             <span className="bg-indigo-300 rounded-xl p-2 shadow">
                                 <FiArrowUpCircle className="rotate-45 size-7 text-indigo-800" />
                             </span>
@@ -101,7 +101,7 @@ function Home() {
                     </div>
                     <div className="flex gap-6 items-center relative">
                         <span className='absolute -left-10 -top-2 bg-purple-300 pb-5 pt-2 px-2 rounded text-xs'>2</span>
-                        <span className="bg-gray-100 text-gray-900 inter-medium px-8 py-1.5 text-md rounded-xl tracking-wider inline-flex items-center gap-3">
+                        <span className="w-72 bg-gray-100 text-gray-900 inter-medium px-8 py-1.5 text-md rounded-xl tracking-wider inline-flex items-center gap-3">
                             <span className="bg-purple-300 rounded-xl p-2 shadow">
                                 <IoSearch className='size-7 text-purple-800' />
                             </span>
@@ -110,7 +110,7 @@ function Home() {
                     </div>
                     <div className="flex gap-6 items-center relative">
                         <span className='absolute -left-10 -top-2 bg-orange-300 pb-5 pt-2 px-2 rounded text-xs'>3</span>
-                        <span className="bg-gray-100 text-gray-900 inter-medium px-8 py-1.5 text-md rounded-xl tracking-wider inline-flex items-center gap-3">
+                        <span className="w-72 bg-gray-100 text-gray-900 inter-medium px-8 py-1.5 text-md rounded-xl tracking-wider inline-flex items-center gap-3">
                             <span className="bg-orange-300 rounded-xl p-2 shadow">
                                 <LiaTelegram className='size-7 text-orange-800' />
                             </span>
