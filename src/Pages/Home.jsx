@@ -57,7 +57,7 @@ function Home() {
                     </h1>
                     <p className="text-center md:text-start mb-8 lg:mb-12 text-lg text-gray-400 inter-regular max-w-sm">Build and scale your future predictions with Premarket app.</p>
                     <div>
-                        <h4 className="text-center md:text-start inter-regular text-sky-600 mb-3 tracking-wider">Request for better tester access</h4>
+                        <h4 className="text-center md:text-start inter-regular text-sky-600 mb-3 tracking-wider">Request for beta tester access</h4>
                         <div className="text-center md:text-start flex gap-2 flex-wrap justify-center md:justify-start">
                             {
                                 error && <p className='text-red-600 text-sm w-full'>{error}</p>

@@ -6,9 +6,8 @@ function App() {
   return (
     <main className='bg-secondary min-h-screen px-8'>
       <header className='h-16 max-w-7xl mx-auto flex items-center'>
-        <Link to={'/'} className='flex items-center'>
-          <SiFuturelearn className='size-5 mr-2 text-gray-100' strokeWidth={2.5}/>
-          <span className="text-gray-100 inter-extrabold text-sm md:text-md tracking-wide uppercase">Premarket</span>
+        <Link to={'/'} className='flex items-center'>          
+          <span className="text-gray-100 inter-extrabold text-sm md:text-md tracking-wide">Premarket</span>
         </Link>
       </header>
       <Outlet />
