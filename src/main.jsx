@@ -7,6 +7,7 @@ import Confirmation from './Pages/Confirmation.jsx';
 import Error from './Pages/Error.jsx';
 import './index.css';
 import { loader as emailLoader } from './Pages/Confirmation.jsx';
+import Insights from './Pages/Insights.jsx';
 
 const router = createBrowserRouter([
   {
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
         path: '/confirmation',
         element: <Confirmation />,
         loader: emailLoader,
+      },
+      {
+        path: '/documentation',
+        element: <Insights />
       },
     ],
     errorElement: <Error />,
